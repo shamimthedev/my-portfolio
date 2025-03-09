@@ -40,3 +40,14 @@ body {
     @apply lg:max-w-5xl;
   }
 }
+
+@keyframes ping-large {
+  75%, 100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.ping-large {
+  animation: ping-large 1s ease-in-out infinite;
+}

@@ -10,7 +10,6 @@ import CssIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
 import GithubIcon from "@/assets/icons/github.svg";
-import StarIcon from "@/components/iconsJSX/StarIcon";
 import { CardHeader } from '@/components/CardHeader'
 import { ToolboxItems } from "@/components/ToolboxItems";
 
