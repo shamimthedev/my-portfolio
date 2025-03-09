@@ -41,6 +41,7 @@ body {
   }
 }
 
+/* Animation for Header Green Circle */
 @keyframes ping-large {
   75%, 100% {
     transform: scale(3);
@@ -50,4 +51,18 @@ body {
 
 .ping-large {
   animation: ping-large 1s ease-in-out infinite;
+}
+
+/* Animation for Tape */
+@keyframes move-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.move-left {
+  animation: move-left 30s linear infinite;
 }
