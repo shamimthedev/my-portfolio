@@ -64,5 +64,14 @@ body {
 }
 
 .move-left {
-  animation: move-left 30s linear infinite;
+  animation: move-left 90s linear infinite; /* Default slow speed */
+}
+
+.move-left-fast {
+  animation: move-left 30s linear infinite; /* Faster speed */
+}
+
+.move-left:hover,
+.move-left-fast:hover {
+  animation-play-state: paused; /* Pause on hover */
 }
