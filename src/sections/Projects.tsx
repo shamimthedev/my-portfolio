@@ -4,6 +4,8 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
+import ArrowUpRightDownIcon from '@/assets/icons/arrow-up-right.svg'
+import CheckboxIcon from '@/assets/icons/check-circle.svg'
 
 const portfolioProjects = [
   {
@@ -50,10 +52,13 @@ export const ProjectsSection = () => {
       <div className="container">
         <SectionHeader eyebrow="Real-world Results" title="Featured Projects" description="See how I transformed concepts into engaging digital experiences."/>
         <div className="flex flex-col gap-20 mt-10 md:mt-20">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, projectIndex) => (
             <Card
               key={project.title}
-              className="p-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
+              className="p-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+              style={{
+                top: `calc(64px + ${projectIndex *40}px)`,
+              }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
@@ -73,20 +78,7 @@ export const ProjectsSection = () => {
                         className="flex gap-2 text-sm md:text-base text-white/50"
                         key={result.title}
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          className="size-5 md:size-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                          />
-                        </svg>
+                        <CheckboxIcon className='size-5 md:size-6'/>
                         <span>{result.title}</span>
                       </li>
                     ))}
@@ -94,21 +86,7 @@ export const ProjectsSection = () => {
                   <a href={project.link}>
                     <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
                       <span>Visit Live Site</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        className="feather feather-arrow-up-right size-4"
-                      >
-                        <line x1="7" y1="17" x2="17" y2="7"></line>
-                        <polyline points="7 7 17 7 17 17"></polyline>
-                      </svg>
+                      <ArrowUpRightDownIcon className='size-6'/>
                     </button>
                   </a>
                 </div>
