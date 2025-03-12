@@ -1,7 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  webpack(config) {
-    const fileLoaderRule = config.module.rules.find((rule) =>
+import { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
+  webpack(config: any) {  // 👈 Add ': any' to fix the error
+    const fileLoaderRule = config.module.rules.find((rule: any) =>
       rule.test?.test?.(".svg")
     );
 

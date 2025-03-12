@@ -1,5 +1,6 @@
 import { Inter, Calistoga } from "next/font/google";
 import "./globals.css";
+import { ReactNode } from "react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,7 +18,7 @@ export const metadata = {
   description: "Portfolio Website",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${calistoga.variable} bg-gray-900 text-white antialiased font-sans`}>
