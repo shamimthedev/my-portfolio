@@ -71,7 +71,20 @@ body {
   animation: move-left 30s linear infinite; /* Faster speed */
 }
 
-.move-left:hover,
-.move-left-fast:hover {
+.move-left:hover {
   animation-play-state: paused; /* Pause on hover */
+}
+
+/* Animation for About Me */
+@keyframes move-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.move-right {
+  animation: move-right 15s linear infinite;
 }
