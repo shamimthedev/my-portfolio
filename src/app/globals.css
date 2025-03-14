@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-/* globals.css */
+html {
+  scroll-behavior: smooth;
+}
 
 /* Tailwind's container equivalent with custom padding and centering */
 .container {
