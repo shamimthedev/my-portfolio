@@ -2,20 +2,16 @@ import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
 
 const footerLinks = [
     {
-        title: 'Youtube  ',
-        href: '#',
+        title: 'GitHub',
+        href: 'https://github.com/shamimthedev',
     },
     {
-        title: 'Twitter  ',
-        href: '#',
+        title: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/shamimthedev/',
     },
     {
-        title: 'Instagram',
-        href: '#',
-    },
-    {
-        title: 'LinkedIn ',
-        href: '#',
+        title: 'Twitter',
+        href: 'https://x.com/shamimthedev',
     },
 ]
 export const FooterSection = () => {
