@@ -13,17 +13,11 @@ body {
   font-family: var(--font-sans), sans-serif; /* Tailwind font family */
 }
 
-/* Custom breakpoints (Optional) */
-@media (min-width: 375px) {
-  /* Custom styles for small screens */
-}
-
-@media (min-width: 768px) {
-  /* Custom styles for medium screens */
-}
-
-@media (min-width: 1200px) {
-  /* Custom styles for large screens */
+/* Custom breakpoints */
+@theme {
+  --breakpoint-sm: 24rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 75rem;
 }
 
 @layer base {
