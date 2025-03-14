@@ -5,6 +5,7 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 import StarIcon from '@/assets/icons/star.svg'
 import SparkleIcon from '@/assets/icons/sparkle.svg'
 import ArrowDown from '@/assets/icons/arrow-down.svg'
+import Download from '@/assets/icons/download.svg'
 
 export const HeroSection = () => {
   return (
@@ -75,15 +76,18 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-5 h-12 rounded-xl">
+          <a href='#projects' className="inline-flex items-center gap-2 border border-white/15 px-5 h-12 rounded-xl relative z-50">
             <span className="font-semibold">Explore My Work</span>
             {/* down arrow icon */}
             <ArrowDown className='size-4' />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-5 h-12 rounded-xl">
-            <span>👏</span>
-            <span className="font-semibold">Let&apos;s Connect</span>
-          </button>
+          </a>
+          <a href="/resume.pdf" download="Md_Shamim_Hossain_Resume.pdf"
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-5 h-12 rounded-xl hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 cursor-pointer relative z-50"
+            aria-label="Download CV"
+          >
+            <Download className='size-4 text-gray-900' />
+            <span className="font-semibold">Download Resume</span>
+          </a>
         </div>
       </div>
     </section>

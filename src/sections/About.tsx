@@ -14,8 +14,6 @@ import ChromeIcon from "@/assets/icons/chrome.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import { CardHeader } from '@/components/CardHeader'
 import { ToolboxItems } from "@/components/ToolboxItems";
-import { motion } from "framer-motion";
-import { useRef } from "react";
 
 const toolboxItems = [
     {
@@ -90,7 +88,6 @@ const hobbies = [
 ]
 
 export const AboutSection = () => {
-    const constraintRef = useRef(null) // Add this line
 
     return (
         <section id="about" className='py-20 lg:py-28'>
@@ -114,24 +111,21 @@ export const AboutSection = () => {
                         </Card>
                     </div>
                     <div className='grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3'>
-                        <Card className='h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2' style={{ pointerEvents: 'auto', overflow: 'visible' }}>
+                        <Card className='h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2'>
                             <CardHeader title='Beyond the Code' description='Explore my interests and hobbies beyond the digital realm.' className='px-6 py-6' />
-                            <div className='relative flex-1' ref={constraintRef} style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden' }} > {/* Add ref here */}
+                            <div className='relative flex-1' >
                                 {hobbies.map((hobby) => 
-                                 (<motion.div
+                                 (<div
                                             key={hobby.title}
                                             className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute z-10"
                                             style={{
                                                 left: hobby.left,
                                                 top: hobby.top
                                             }}
-                                            drag
-                                            dragConstraints={constraintRef} // Add this line
-                                           
                                         >
                                             <span className="font-medium text-gray-950">{hobby.title}</span>
                                             <span>{hobby.emoji}</span>
-                                        </motion.div>
+                                        </div>
                                     ))}
                             </div>
                         </Card>
