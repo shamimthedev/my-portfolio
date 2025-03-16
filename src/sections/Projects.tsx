@@ -1,18 +1,27 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import ArrowUpRightDownIcon from '@/assets/icons/arrow-up-right.svg'
 import CheckboxIcon from '@/assets/icons/check-circle.svg'
 import Github from '@/assets/icons/github-icon.svg'
+import Nestmart from "@/assets/images/nestmart.png";
+import eMoogli from "@/assets/images/emoogli.png";
+import eMart from "@/assets/images/emart.png";
+import Kosi from "@/assets/images/kosi.png";
+import HouseDecor from "@/assets/images/house-decor.png";
+import Kerri from "@/assets/images/kerri.png";
+import Telecom from "@/assets/images/fast-telecom.png";
+import Trendy from "@/assets/images/trendy-zone.png";
+import Feast from "@/assets/images/urban-feast.png";
+import ProductCard from "@/assets/images/product-card.png";
+import BlogCard from "@/assets/images/product-review-card.png";
+import Crosson from "@/assets/images/crosson.png";
 
 
 const portfolioProjects = [
   {
     tech: ["React", "Tailwind CSS", "Redux Toolkit"],
-    title: "NestMart - Multipurpose e-commerce",
+    title: "Nest - Mart & Grocery",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
@@ -20,31 +29,139 @@ const portfolioProjects = [
     ],
     git: "https://github.com/shamimthedev/nest-mart",
     live: "https://nest-mart-eight.vercel.app/",
-    image: darkSaasLandingPage,
+    image: Nestmart,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    tech: ["React", "Tailwind CSS", "Redux Toolkit"],
+    title: "eMoogli - The Everything Store",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    git: "https://github.com/shamimthedev/light-saas-landing-page",
+    live: "https://light-saas-landing-page.vercel.app/",
+    image: eMoogli,
+  },
+  {
+    tech: ["React", "Tailwind CSS", "Redux Toolkit"],
+    title: "eMart - Buy Anything",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    git: "https://github.com/shamimthedev/ai-startup-landing-page",
+    live: "https://ai-startup-landing-page.vercel.app/",
+    image: eMart
+  },
+  {
+    tech: ["React", "Tailwind CSS", "Redux Toolkit"],
+    title: "Kosi - Buy Anything",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    git: "https://github.com/shamimthedev/ai-startup-landing-page",
+    live: "https://ai-startup-landing-page.vercel.app/",
+    image: Kosi
+  },
+  {
+    tech: ["React", "Tailwind CSS", "Redux Toolkit"],
+    title: "HouseDecor",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    git: "https://github.com/shamimthedev/ai-startup-landing-page",
+    live: "https://ai-startup-landing-page.vercel.app/",
+    image: HouseDecor
+  },
+  {
+    tech: ["React", "Tailwind CSS", "Context API"],
+    title: "Trendy Zone",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    git: "https://github.com/shamimthedev/ai-startup-landing-page",
+    live: "https://ai-startup-landing-page.vercel.app/",
+    image: Trendy
+  },
+  {
+    tech: ["Bootstrap"],
+    title: "Kerri - Responsive Portfolio",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    git: "https://github.com/shamimthedev/ai-startup-landing-page",
+    live: "https://ai-startup-landing-page.vercel.app/",
+    image: Kerri
+  },
+  {
+    tech: ["Bootstrap"],
+    title: "Crosson",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    git: "https://github.com/shamimthedev/ai-startup-landing-page",
+    live: "https://ai-startup-landing-page.vercel.app/",
+    image: Crosson
+  },
+  {
+    tech: ["React", "Tailwind CSS", "Redux Toolkit"],
+    title: "Fast Telecom",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    git: "https://github.com/shamimthedev/ai-startup-landing-page",
+    live: "https://ai-startup-landing-page.vercel.app/",
+    image: Telecom
+  },
+  {
+    tech: ["React", "Tailwind CSS", "Redux Toolkit"],
+    title: "Urban Feast",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    git: "https://github.com/shamimthedev/ai-startup-landing-page",
+    live: "https://ai-startup-landing-page.vercel.app/",
+    image: Feast
+  },
+  {
+    tech: ["React", "Tailwind CSS", "Redux Toolkit"],
+    title: "Responsive Product Card",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    git: "https://github.com/shamimthedev/ai-startup-landing-page",
+    live: "https://ai-startup-landing-page.vercel.app/",
+    image: ProductCard
+  },
+  {
+    tech: ["React", "Tailwind CSS", "Redux Toolkit"],
+    title: "Responsive Blog review Card",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    git: "https://github.com/shamimthedev/ai-startup-landing-page",
+    live: "https://ai-startup-landing-page.vercel.app/",
+    image: BlogCard
   },
 ];
 
@@ -65,7 +182,7 @@ export const ProjectsSection = () => {
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   {project.tech && (
-                    <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 uppercase font-bold tracking-widest text-xs md:text-sm text-transparent bg-clip-text">
+                    <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 md:uppercase font-bold tracking-widest text-xs md:text-sm text-transparent bg-clip-text">
                       {project.tech.map((item, index) => (
                         <span key={index}>
                           {item}
