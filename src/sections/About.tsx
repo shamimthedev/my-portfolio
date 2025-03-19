@@ -4,7 +4,7 @@ import { Card } from "@/components/Card"
 import SectionHeader from "@/components/SectionHeader"
 import bookImage from '@/assets/images/book-cover.png'
 import Image from "next/image";
-import mapImage from '@/assets/images/map.png'
+import mapImage from '@/assets/images/dhaka-map.png'
 import smileMemoji from '@/assets/images/memoji-smile.png'
 import JavascriptIcon from "@/assets/icons/square-js.svg";
 import HtmlIcon from "@/assets/icons/html5.svg";
