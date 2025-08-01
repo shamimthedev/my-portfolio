@@ -103,10 +103,12 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <div className="flex flex-col sm:flex-row mt-8 gap-4">
-                    <a href={project.git} target="_blank" className="inline-flex items-center justify-center gap-2 border border-white/15 px-5 h-12 rounded-xl relative z-50" aria-label="GitHub">
-                      <span className="font-semibold">GitHub</span>
-                      <Github className='size-5 ' />
-                    </a>
+                    {projectIndex !== 1 && (
+                      <a href={project.git} target="_blank" className="inline-flex items-center justify-center gap-2 border border-white/15 px-5 h-12 rounded-xl relative z-50" aria-label="GitHub">
+                        <span className="font-semibold">GitHub</span>
+                        <Github className='size-5 ' />
+                      </a>
+                    )}
                     <a href={project.live} target="_blank"
                       className="inline-flex items-center justify-center gap-2 border border-white bg-white text-gray-900 px-5 h-12 rounded-xl hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 cursor-pointer relative z-50 "
                       aria-label="Live Site"
