@@ -5,7 +5,7 @@ import ArrowUpRightDownIcon from '@/assets/icons/arrow-up-right.svg'
 import CheckboxIcon from '@/assets/icons/check-circle.svg'
 import Github from '@/assets/icons/github-icon.svg'
 import Nestmart from "@/assets/images/nestmart.png";
-import eMoogli from "@/assets/images/emoogli.png";
+import MangoBazar from "@/assets/images/mango-bazar.png";
 import eMart from "@/assets/images/emart.png";
 import Kosi from "@/assets/images/kosi.png";
 
@@ -23,16 +23,16 @@ const portfolioProjects = [
     image: Nestmart,
   },
   {
-    tech: ["React", "SCSS"],
-    title: "eMoogli - Shopping Store",
+    tech: ["Next.js", "Redux Toolkit", "Tailwind CSS"],
+    title: "Chapai Mango Bazar",
     results: [
-      { title: "Built a modern e-commerce store with React and SCSS." },
+      { title: "Built a modern e-commerce store with next.js and redux toolkit." },
       { title: "Enhanced user experience by 40% through intuitive navigation." },
       { title: "Improved site speed by 50% for faster load times." },
     ],
-    git: "https://github.com/shamimthedev/emoogli--react",
-    live: "https://emoogli-react.vercel.app/",
-    image: eMoogli,
+    git: "https://github.com/shamimthedev?tab=repositories",
+    live: "https://chapaimangobazar.com/",
+    image: MangoBazar,
   },
   {
     tech: ["Next.js", "Tailwind CSS",],
