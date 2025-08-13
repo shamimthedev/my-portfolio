@@ -10,8 +10,8 @@ const footerLinks = [
         href: 'https://www.linkedin.com/in/shamimthedev/',
     },
     {
-        title: 'Twitter',
-        href: 'https://x.com/shamimthedev',
+        title: 'Facebook',
+        href: 'https://facebook.com/shamimthedev',
     },
 ]
 export const FooterSection = () => {
