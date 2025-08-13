@@ -22,11 +22,7 @@ const portfolioProjects = [
     live: "https://nest-mart-eight.vercel.app/",
     image: Nestmart,
   },
-<<<<<<< HEAD
-{
-=======
   {
->>>>>>> 70a32898e942eaa8c2930c4c6e0108cf106b09c5
     tech: ["Next.js", "Redux Toolkit", "Tailwind CSS"],
     title: "Chapai Mango Bazar",
     results: [
