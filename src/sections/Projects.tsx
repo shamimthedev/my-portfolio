@@ -5,7 +5,7 @@ import ArrowUpRightDownIcon from '@/assets/icons/arrow-up-right.svg'
 import CheckboxIcon from '@/assets/icons/check-circle.svg'
 import Github from '@/assets/icons/github-icon.svg'
 import Nestmart from "@/assets/images/nestmart.png";
-import eMoogli from "@/assets/images/emoogli.png";
+import MangoBazar from "@/assets/images/mango-bazar.png";
 import eMart from "@/assets/images/emart.png";
 import Kosi from "@/assets/images/kosi.png";
 
@@ -22,17 +22,17 @@ const portfolioProjects = [
     live: "https://nest-mart-eight.vercel.app/",
     image: Nestmart,
   },
-  {
-    tech: ["React", "SCSS"],
-    title: "eMoogli - Shopping Store",
+{
+    tech: ["Next.js", "Redux Toolkit", "Tailwind CSS"],
+    title: "Chapai Mango Bazar",
     results: [
-      { title: "Built a modern e-commerce store with React and SCSS." },
+      { title: "Built a modern e-commerce store with next.js and redux toolkit." },
       { title: "Enhanced user experience by 40% through intuitive navigation." },
       { title: "Improved site speed by 50% for faster load times." },
     ],
-    git: "https://github.com/shamimthedev/emoogli--react",
-    live: "https://emoogli-react.vercel.app/",
-    image: eMoogli,
+    git: "https://github.com/shamimthedev?tab=repositories",
+    live: "https://chapaimangobazar.com/",
+    image: MangoBazar,
   },
   {
     tech: ["Next.js", "Tailwind CSS",],
@@ -103,10 +103,12 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <div className="flex flex-col sm:flex-row mt-8 gap-4">
-                    <a href={project.git} target="_blank" className="inline-flex items-center justify-center gap-2 border border-white/15 px-5 h-12 rounded-xl relative z-50" aria-label="GitHub">
-                      <span className="font-semibold">GitHub</span>
-                      <Github className='size-5 ' />
-                    </a>
+                    {projectIndex !== 1 && (
+                      <a href={project.git} target="_blank" className="inline-flex items-center justify-center gap-2 border border-white/15 px-5 h-12 rounded-xl relative z-50" aria-label="GitHub">
+                        <span className="font-semibold">GitHub</span>
+                        <Github className='size-5 ' />
+                      </a>
+                    )}
                     <a href={project.live} target="_blank"
                       className="inline-flex items-center justify-center gap-2 border border-white bg-white text-gray-900 px-5 h-12 rounded-xl hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 cursor-pointer relative z-50 "
                       aria-label="Live Site"
