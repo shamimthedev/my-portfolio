@@ -23,13 +23,20 @@ export const ProjectsSection = () => {
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   {project.tech && (
-                    <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 md:uppercase font-bold tracking-widest text-xs md:text-sm text-transparent bg-clip-text">
-                      {project.tech.map((item, index) => (
-                        <span key={index}>
+                    <div className="flex flex-wrap gap-2 mb-2">
+                      {project.tech.slice(0, 3).map((item, index) => (
+                        <span
+                          key={index}
+                          className="bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text font-bold tracking-widest text-xs md:text-sm uppercase"
+                        >
                           {item}
-                          {index < project.tech.length - 1 && " • "}
                         </span>
                       ))}
+                      {project.tech.length > 3 && (
+                        <span className="bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text font-bold tracking-widest text-xs md:text-sm uppercase">
+                          +{project.tech.length - 3} more
+                        </span>
+                      )}
                     </div>
                   )}
 
