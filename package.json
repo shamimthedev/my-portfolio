@@ -1,7 +1,28 @@
 {
-  "name": "my-portfolio",
-  "version": "0.1.0",
+  "name": "shamimthedev-portfolio",
+  "description": "Personal portfolio of Md. Shamim Hossain - Frontend Developer & Digital Marketing Expert. Showcasing modern web development projects and digital marketing expertise.",
+  "version": "1.0.0",
   "private": true,
+  "author": {
+    "name": "Md. Shamim Hossain",
+    "email": "shamimthedev@gmail.com",
+    "url": "https://shamimthedev.vercel.app"
+  },
+  "homepage": "https://shamimthedev.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shamimthedev/shamimthedev-portfolio"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend-developer",
+    "digital-marketing",
+    "react",
+    "nextjs",
+    "shamimthedev",
+    "web-development",
+    "bangladesh-developer"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
