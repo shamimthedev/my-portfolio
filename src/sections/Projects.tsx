@@ -4,61 +4,7 @@ import { Card } from "@/components/Card";
 import ArrowUpRightDownIcon from '@/assets/icons/arrow-up-right.svg'
 import CheckboxIcon from '@/assets/icons/check-circle.svg'
 import Github from '@/assets/icons/github-icon.svg'
-import Nestmart from "@/assets/images/nestmart.png";
-import MangoBazar from "@/assets/images/mango-bazar.png";
-import eMart from "@/assets/images/emart.png";
-import Kosi from "@/assets/images/kosi.png";
-
-const portfolioProjects = [
-  {
-    tech: ["React", "Tailwind CSS", "Redux Toolkit"],
-    title: "Nest - Mart & Grocery",
-    results: [
-      { title: "Delivered a fully responsive interface." },
-      { title: "Implemented advanced filtering and search options." },
-      { title: "Added persistent cart functionality for seamless shopping." },
-    ],
-    git: "https://github.com/shamimthedev/nest-mart",
-    live: "https://nest-mart-eight.vercel.app/",
-    image: Nestmart,
-  },
-  {
-    tech: ["Next.js", "Redux Toolkit", "Tailwind CSS"],
-    title: "Chapai Mango Bazar",
-    results: [
-      { title: "Built a modern e-commerce store with next.js and redux toolkit." },
-      { title: "Enhanced user experience by 40% through intuitive navigation." },
-      { title: "Improved site speed by 50% for faster load times." },
-    ],
-    git: "https://github.com/shamimthedev?tab=repositories",
-    live: "https://chapaimangobazar.com/",
-    image: MangoBazar,
-  },
-  {
-    tech: ["Next.js", "Tailwind CSS",],
-    title: "eMart - Buy Anything",
-    results: [
-      { title: "Developed a responsive e-commerce site using Next.js." },
-      { title: "Designed an interactive hero section with a dynamic slider." },
-      { title: "Implemented a sticky product image on scroll for better UX." },
-    ],
-    git: "https://github.com/shamimthedev/emart-nextjs",
-    live: "https://nextjs-ecom-ruby.vercel.app/",
-    image: eMart
-  },
-  {
-    tech: ["React", "Tailwind CSS", "Redux Toolkit"],
-    title: "Kosi - Furniture Store",
-    results: [
-      { title: "Built a responsive furniture store using React." },
-      { title: "Integrated Redux Toolkit for efficient state management." },
-      { title: "Designed a modern, user-friendly interface for enhanced shopping." },
-    ],
-    git: "https://github.com/shamimthedev/Kosi--react-ecommerce",
-    live: "https://kosi-react-ecommerce.vercel.app/",
-    image: Kosi
-  },
-];
+import { portfolioProjects } from "@/data/projects";
 
 export const ProjectsSection = () => {
   return (
